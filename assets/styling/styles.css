@@ -173,7 +173,7 @@ ul li {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  grid-row-gap: 80px;
+  grid-row-gap: 70px;
 }
 .main-container .services-container .inner-container > h2,
 .main-container .services-container .inner-container div {
@@ -192,9 +192,12 @@ ul li {
   border-radius: 30px;
 }
 .main-container .services-container .inner-container .services-content {
+  height: inherit;
+  width: inherit;
   display: flex;
-  align-items: center;
-  grid-gap: 30px;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   margin: 0 auto;
 }
 .main-container .services-container .inner-container .services-content .single-service {
@@ -205,6 +208,7 @@ ul li {
   grid-row-gap: 30px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  overflow: hidden;
 }
 .main-container .services-container .inner-container .services-content .single-service .service-img {
   height: 50%;
@@ -221,10 +225,13 @@ ul li {
   line-height: 27.61px;
 }
 .main-container .services-container .inner-container .services-content .single-service .service-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   max-height: 110px;
   text-align: center;
   line-height: 25.1px;
-  padding: 0 10px 10px 10px;
+  margin: 0 10px 10px 10px;
   text-overflow: ellipsis;
-  overflow-y: hidden;
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */
